@@ -1,0 +1,77 @@
+import time
+questionNumber = 0
+right = 0
+wrong = 0
+name = str(input("Please Enter Your Name: "))
+print()
+def questions():
+    def questionOne():
+        global right, wrong, questionNumber
+        print("What is the population of India?")
+        print("Is it A:6.7m B:3.2m C:5.1m or D:4.5m")
+        ans = str(input())
+        if ans == "D" or ans == "d" or ans == '4.5' or ans == '4':
+                print("That's right!")
+                right = right + 1
+        else:
+            print("Oops..You got it wrong!")
+            wrong = wrong+1
+        questionNumber = questionNumber + 1
+    questionOne()
+    
+    print()
+    print("So far",name,"You have got",right,"Answers right,",wrong,"Answers wrong and you have completed",questionNumber,"Questions")
+    print()
+    
+    def questionTwo():
+        global right, wrong, questionNumber
+        print("What year did covid start?")
+        print("Is it A:2008 B:2019 C:2022 D:2018")
+        ans = str(input())
+        if ans == "C" or ans == "c" or ans == '1642'or ans == '3':
+            print("Correct!")
+            right = right + 1
+        else:
+            print("Oh no! Better luck next time")
+            wrong = wrong+1
+        questionNumber = questionNumber + 1   
+    questionTwo()
+    time.sleep(2)
+    print()
+    print("So far ",name,"You have got",right,"Answers right,",wrong,"Answers wrong and you have completed",questionNumber,"Questions")
+    print()
+   
+    def questionThree():
+        global right, wrong, questionNumber
+        print("How many recoveries are there in hyderabad (Approx)")
+        print("Is it A:2000 B:600 C:70,000 D:100000")
+        ans = str(input())
+        if ans == "D" or ans == "d" or ans == '100000'or ans == '4':
+            print("Accurate!")
+            right = right + 1
+        else:
+            print("No, you've got it wrong!")
+            wrong = wrong+1
+        questionNumber = questionNumber + 1   
+    questionThree()
+    time.sleep(2)
+    print()
+    print("So far ",name,"You have got",right,"Answers right,",wrong,"Answers wrong and you have completed",questionNumber,"Questions")
+    print()
+    
+    def questionFour():
+        global right, wrong, questionNumber
+        print("How many new babys where born in covid in 2020")
+        print("Is it A:61,000 B:208,000 C:98,000 or D:18,000")
+        ans = str(input())
+        if ans == "D" or ans == "d" or ans == '100000'or ans == '4':
+            print("Perfect!")
+            
+            right = right + 1
+        else:
+            print("Alas,That's Incorrect!")
+            wrong = wrong+1
+        questionNumber = questionNumber + 1   
+    questionFour()
+questions()
+
